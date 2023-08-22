@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+        border-radius: 10px;
+        border: 8px solid ;
+        padding-left:70px;
+        padding-bottom: 20px;
+        width: 250px;
+     background-color: rgb(95, 215, 218);
+
+
+    }
+    div:hover{
+       background-color: rgb(128, 35, 88) ;
+    }
+</style>
+    
+</head>
+<body>
+    <script>
+        function add(){
+    let a=Number(document.getElementById('n1').value);
+    let b=Number(document.getElementById('n2').value);
+    let ans=a+b;
+    document.getElementById('ans').value=ans;
+        }
+
+    
+
+    function multiply(){
+    let a=Number(document.getElementById('n1').value);
+    let b=Number(document.getElementById('n2').value);
+    let ans=a*b;
+    document.getElementById('ans').value=ans;
+    }
+
+    function sub(){
+    let a=Number(document.getElementById('n1').value);
+    let b=Number(document.getElementById('n2').value);
+    let ans=a-b;
+    document.getElementById('ans').value=ans;
+    }
+
+    function division(){
+    let a=Number(document.getElementById('n1').value);
+    let b=Number(document.getElementById('n2').value);
+    let ans=a/b;
+    document.getElementById('ans').value=ans;
+    <br>
+
+    }
+
+    
+
+</script>
+<div>
+    <h1>"Calculator"</h1>
+    <h3>&#127800;&#127800;Enter the values to get the answers...&#127800;&#127800;</h3>
+    <input type="text" placeholder="num1" id="n1">&#10024;
+    <input type="text" placeholder="num2" id="n2">&#10024;<br><br>
+  <button onclick="add()">add &#10133;</button>
+  <br><br>
+  <button onclick="multiply()">multiply  *</button>
+  <br><br>
+  <button onclick="sub()">sub  &#10134;</button>
+  <br><br>
+  <button onclick="division()">division  &#x2797;</button>
+  <br><br>
+  
+  <input type="text" placeholder="ans" id="ans">&#x1F44F;<br>
+</div>
+
+    
+
+
+    
+</body>
+</html>
